@@ -9,13 +9,8 @@
 
   const products: Product[] = [];
 
-  const addProduct = (data: {
-    title: string,
-    createAt: Date,
-    stock: number,
-    size?: Sizes
-  }) => {
-    products.push(data);
+  const addProduct = (data: Product) => {
+    products.push(data)
   }
 
   addProduct({
